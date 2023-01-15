@@ -1,6 +1,6 @@
 FROM openjdk
 
-COPY ./target/*.jar /usr/app/dockerDemo.jar
+COPY ./target/Hotel-Management*.jar /usr/app/Hotel-Management.jar
 
 WORKDIR /usr/app
 
