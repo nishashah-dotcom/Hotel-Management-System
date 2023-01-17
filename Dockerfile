@@ -1,9 +1,4 @@
-FROM openjdk
-
-COPY ./target/Hotel-Management-1.0.0-RELEASE.jar /usr/app/Hotel-Management.jar
-
-WORKDIR /usr/app
-
+FROM tomcat:8
+COPY target/Hotel-Management-1.0.0-RELEASE.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
-
-ENTRYPOINT ["java","-jar","Hotel-Management.jar"]
+CMD ["catalina.sh", "run"]
