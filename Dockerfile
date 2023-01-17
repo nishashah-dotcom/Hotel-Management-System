@@ -1,6 +1,6 @@
 FROM openjdk
 
-COPY ./target/Hotel-Management*.jar /usr/app/Hotel-Management.jar
+COPY ./target/Hotel-Management-1.0.0-RELEASE.jar /usr/app/Hotel-Management.jar
 
 WORKDIR /usr/app
 
